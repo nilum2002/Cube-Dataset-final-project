@@ -1,0 +1,12 @@
+names:
+- cube
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: robo-games
+  url: https://universe.roboflow.com/botzillaiesl-robo-games/robo-games/dataset/4
+  version: 4
+  workspace: botzillaiesl-robo-games
+test: ../test/images
+train: ../train/images
+val: ../valid/images

@@ -5,6 +5,14 @@
 __pycache__*
 output/
 Cube-Detection-Dataset-3/test/images
-Cube-Detection-Dataset-3/train/images/
-Cube-Detection-Dataset-3/val/images/
-
+Cube-Detection-Dataset-3/train/images
+Cube-Detection-Dataset-3/valid/images
+Robo-Games-4/test/images
+Robo-Games-4/train/images
+Robo-Games-4/valid/images
+Cube-Detection-Dataset-3/test/labels
+Cube-Detection-Dataset-3/train/labels
+Cube-Detection-Dataset-3/valid/labels
+Robo-Games-4/test/labels
+Robo-Games-4/train/labels
+Robo-Games-4/valid/labels

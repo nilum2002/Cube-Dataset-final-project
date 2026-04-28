@@ -1,31 +1,25 @@
 from ultralytics import YOLO
 
-# # # yolo detect train \
-# # model=yolov8n.pt \
-# # data=data.yaml \
-# # epochs=100 \
-# # freeze=10 \
-# # lr0=0.001 \
-# # mixup=0.2 \
-# # weight_decay=0.0005 \
-# # patience=20
-
 # Load the nano model
 model = YOLO('yolov8n.pt')
 
 # Train the model
 results = model.train(
-    data='/media/nilum/New_Volume/01.projects/Dataset-cubes/Cube-Detection-Dataset-3/data.yaml', 
+    data='/media/nilum/New_Volume/01.projects/Dataset-cubes/Robo-Games-4/data.yaml', 
     epochs=100, 
+    warmup_epochs=10,
+    warmup_momentum=0.9,
+    warmup_bias_lr=0.01,
     imgsz=640, 
     device='0', 
-    optimizer="AdamW",
     lr0=5e-4, 
     project='/media/nilum/New_Volume/01.projects/Dataset-cubes/runs', 
     single_cls = True, 
     freeze=10,
     weight_decay=5e-4,
-    mixup=0.2) # Use device='cpu' if no GPU
+    mixup=0.2,
+    cos_lr = True)
+ 
 
 ######################################################
 #              To Implement - Warmup ratio           #
@@ -35,8 +29,14 @@ results = model.train(
 # learning scheduler - cosine 
 
 
+
+######################################################
+#             Model Validation                       #
+######################################################
+
+
 model = YOLO("/media/nilum/New_Volume/01.projects/Dataset-cubes/runs/train-9/weights/best.pt")
 
-metrics = model.val(data="/media/nilum/New_Volume/01.projects/Dataset-cubes/Cube-Detection-Dataset-3/data.yaml", split="val")
+metrics = model.val(data="/media/nilum/New_Volume/01.projects/Dataset-cubes/Robo-Games-4/data.yaml", split="val")
 
 print(metrics)
