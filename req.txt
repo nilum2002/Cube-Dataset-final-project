@@ -1,4 +1,10 @@
 pillow 
 imagehash 
 tqdm
-opencv-python
+numpy
+Cython
+ultralytics
+typeguard
+roboflow
+
+                
