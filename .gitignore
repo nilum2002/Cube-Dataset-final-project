@@ -2,3 +2,9 @@
 /env
 /raw-data-old
 /cleaned-old
+__pycache__*
+output/
+Cube-Detection-Dataset-3/test/images
+Cube-Detection-Dataset-3/train/images/
+Cube-Detection-Dataset-3/val/images/
+
