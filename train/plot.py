@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load CSV
-df = pd.read_csv("/media/nilum/New_Volume/01.projects/Dataset-cubes/runs/train-9/results.csv")
+df = pd.read_csv("/media/nilum/New_Volume/01.projects/Dataset-cubes/runs/train-12/results.csv")
 # Remove spaces in column names
 df.columns = df.columns.str.strip()
 

@@ -39,7 +39,7 @@ from ultralytics import YOLO
 import cv2
 
 # Load model
-model = YOLO("/media/nilum/New_Volume/01.projects/Dataset-cubes/runs/train-9/weights/best.pt")
+model = YOLO("/media/nilum/New_Volume/01.projects/Dataset-cubes/runs/train-12/weights/best.pt")
 
 # Open webcam
 cap = cv2.VideoCapture(0, cv2.CAP_V4L2)   # Linux backend
