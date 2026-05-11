@@ -24,29 +24,29 @@ model = YOLO('yolov8n.pt')
  
 
 # # # Tune the model
-results = model.tune(
-    data='/home/intellisense05/Nilum/Cube-Dataset-final-project/Robo-Games-5/data.yaml', 
-    epochs=100, 
-    warmup_epochs=10,
-    warmup_momentum=0.9,
-    warmup_bias_lr=0.01,
-    imgsz=640, 
-    device='0', 
-    lr0=1e-7,
-    project='/home/intellisense05/Nilum/Cube-Dataset-final-project/runs2', 
-    single_cls = True,
-    # freeze=10,
-    weight_decay=1e-4,
-    mixup=0.2,
-    cos_lr = True)
+# results = model.tune(
+#     data='/home/intellisense05/Nilum/Cube-Dataset-final-project/Robo-Games-5/data.yaml', 
+#     epochs=100, 
+#     warmup_epochs=10,
+#     warmup_momentum=0.9,
+#     warmup_bias_lr=0.01,
+#     imgsz=640, 
+#     device='0', 
+#     lr0=1e-7,
+#     project='/home/intellisense05/Nilum/Cube-Dataset-final-project/runs2', 
+#     single_cls = True,
+#     # freeze=10,
+#     weight_decay=1e-4,
+#     mixup=0.2,
+#     cos_lr = True)
 
 ######################################################
 #             Model Validation                       #
 ######################################################
 
 
-# model = YOLO("/media/nilum/New_Volume/01.projects/Dataset-cubes/runs/train-16/weights/best.pt")
+model = YOLO("/home/intellisense05/Nilum/Cube-Dataset-final-project/runs2/tune/weights/best.pt")
 
-# metrics = model.val(data="/media/nilum/New_Volume/01.projects/Dataset-cubes/Cube-Detection-Dataset-3/data.yaml", split="val", save_dir = "/media/nilum/New_Volume/01.projects/Dataset-cubes/runs/val-15")
+metrics = model.val(data="/home/intellisense05/Nilum/Cube-Dataset-final-project/Robo-Games-5/data.yaml", split="val", save_dir = "/home/intellisense05/Nilum/Cube-Dataset-final-project/runs2/val-1")
 
-# print(metrics)
+print(metrics)
