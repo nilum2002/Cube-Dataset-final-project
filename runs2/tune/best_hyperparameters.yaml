@@ -1,0 +1,31 @@
+# 10/10 iterations complete ✅ (10835.55s)
+# Results saved to /home/intellisense05/Nilum/Cube-Dataset-final-project/runs2/tune
+# Best fitness=0.70296 observed at iteration 3
+# Best fitness metrics are {'metrics/precision(B)': 0.94611, 'metrics/recall(B)': 0.96463, 'metrics/mAP50(B)': 0.97896, 'metrics/mAP50-95(B)': 0.70296, 'val/box_loss': 0.9251, 'val/cls_loss': 0.41765, 'val/dfl_loss': 1.21925, 'fitness': 0.70296}
+# Best fitness model is /home/intellisense05/Nilum/Cube-Dataset-final-project/runs2/tune/weights
+lr0: 1.0e-05
+lrf: 0.01
+momentum: 0.89167
+weight_decay: 0.0
+warmup_epochs: 4.99767
+warmup_momentum: 0.79725
+box: 7.41942
+cls: 0.4807
+cls_pw: 0.0
+dfl: 1.75205
+hsv_h: 0.02849
+hsv_s: 0.51101
+hsv_v: 0.39621
+degrees: 0.00763
+translate: 0.12413
+scale: 0.30195
+shear: 0.0
+perspective: 0.001
+flipud: 0.00676
+fliplr: 0.49482
+bgr: 0.01371
+mosaic: 1.0
+mixup: 0.26339
+cutmix: 0.0
+copy_paste: 0.01098
+close_mosaic: 8
