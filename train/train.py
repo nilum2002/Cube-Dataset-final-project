@@ -45,8 +45,8 @@ model = YOLO('yolov8n.pt')
 ######################################################
 
 
-model = YOLO("/home/intellisense05/Nilum/Cube-Dataset-final-project/runs2/tune/weights/best.pt")
+model = YOLO("/media/nilum/New_Volume/01.projects/Dataset-cubes/runs2/tune/weights/best.pt")
 
-metrics = model.val(data="/home/intellisense05/Nilum/Cube-Dataset-final-project/Robo-Games-5/data.yaml", split="val", save_dir = "/home/intellisense05/Nilum/Cube-Dataset-final-project/runs2/val-1")
+metrics = model.val(data="/media/nilum/New_Volume/01.projects/Dataset-cubes/Cube-Detection-Dataset-3/data.yaml", split="val", save_dir = "/media/nilum/New_Volume/01.projects/Dataset-cubes/val")
 
 print(metrics)
